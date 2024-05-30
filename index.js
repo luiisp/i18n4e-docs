@@ -10,9 +10,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 app.set("view engine", "ejs");
 app.set("views",path.join(__dirname, "views"));
-//i18n4e.default.init(app, {
-//  serverSideTranslation: true,
-//});
+i18n4e.default.init(app, {
+  serverSideTranslation: true,
+});
 
 app.get("/", (req, res) => {
   res.render("index");
