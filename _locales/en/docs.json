@@ -1,0 +1,33 @@
+{
+    "what-is-title":{
+        "message":"What is i18n4e?"
+    },
+    "what-is-content":{
+        "message":"i18n4e is a package that helps you internationalize your Express applications easily and efficiently inspired by chrome.i18n"
+    },
+    "start-title":{
+        "message":"Getting Started"
+    },
+    "modes-understands":{
+        "message":"i18n4e can be applied easily, but you need to choose how to apply it. There are 2 slightly different ways to apply it, which is using CST (Client Side Translation) and SST (Server Side Translation)"
+    },
+    "warn":{
+        "message":"CST mode is enabled by default on i18n4 but you can easily change this."
+    },
+    
+    "cst-desc":{
+        "message":"CST (Client-Side Translation) is a way of applying i18n4e using JavaScript on the client side. This way is suitable for applications that have a lot of client-side rendering and want to deliver content quickly to their customers. First the content is rendered and then it is translated into the user's language."
+    },
+    "sst-desc":{
+        "message":"SST (Server-Side Translation) is a way of applying i18n4e to the client on the server side. This way is suitable for applications that have a lot of server-side rendering and want to deliver all translated-only content to their clients directly. The document is translated into the client's language and then delivered translated (The cache is available in SST)"
+    },
+    "cst-btn":{
+        "message":"Start with Client-Side Translation"
+    },
+    "sst-btn":{
+        "message":"Start with Server-Side Translation"
+    },
+    "only-cst":{
+        "message":"Only if CST mode"
+    }
+}

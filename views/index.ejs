@@ -1,72 +1,7 @@
 <%-include("./partials/header")-%>
-<style>
-  
-#logo{
-    background-image: url('img/i18n4e.png');
-    background-size:cover;
 
-}
-</style>
   <body class="bg-[#040408fd]">
-    <header class="absolute inset-x-0 top-0 z-50 py-6">
-      <div class="mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5">
-          <nav class="w-full flex justify-between gap-6 relative">
-  
-              <div class="min-w-max inline-flex relative">
-                  <a href="/" class="relative flex items-center gap-3">
-                          <div id="logo"  class="relative w-10 h-10 overflow-hidden flex rounded-xl">
-  
-                          </div>
-                      <div class="inline-flex text-lg font-semibold text-gray-100">
-                          i18n4e  
-                      </div>
-                  </a>
-              </div>
-  
-              <div data-nav-overlay aria-hidden="true"
-                  class="fixed hidden inset-0 lg:!hidden backdrop-filter backdrop-blur-xl">
-              </div>
-              <div data-navbar
-                  class="flex invisible opacity-0  translate-y-10 overflow-hidden lg:visible lg:opacity-100  lg:-translate-y-0 lg:scale-y-100 duration-300 ease-linear flex-col gap-y-6 gap-x-4 lg:flex-row w-full lg:justify-between lg:items-center absolute lg:relative top-full lg:top-0 lg:!bg-transparent border-x border-x-gray-100 lg:border-x-0">
-                  <ul
-                      class="border-t border-gray-100  lg:border-t-0 px-6 lg:px-0 pt-6 lg:pt-0 flex flex-col lg:flex-row gap-y-4 gap-x-3 text-lg text-gray-700 w-full lg:justify-center lg:items-center">
-  
-  
-                  </ul>
-  
-                  <div
-                      
-                      class="lg:min-w-max flex items-center sm:w-max w-full pb-6 lg:pb-0 border-b border-gray-100   lg:border-0 px-6 lg:px-0">
-                      
-                      <span class="text-gray-200 mx-4 font-extrabold">v:<span class="version">...</span></span>
-
-                      <a href="https://github.com/luiisp/i18n4e/"
-                          class="flex emerald justify-center bg-[#0089EC] items-center w-full sm:w-max px-6 h-12 rounded-full outline-none relative overflow-hidden border duration-300 ease-linear 
-                      after:absolute after:inset-x-0 after:aspect-square after:scale-0 after:opacity-70  after:origin-center after:duration-300 after:ease-linear after:rounded-full after:top-0 after:left-0 after:bg-[#FF0F7C] hover:after:opacity-100 hover:after:scale-[2.5] border-transparent hover:border-[#FF0F7C]">
-                          <span class="relative z-10 font-bold">
-                              Start Using Now
-                          </span>
-                      </a>
-                  </div>
-              </div>
-  
-  
-              <div class="min-w-max flex items-center gap-x-3">
-  
-                  <button data-toggle-navbar data-is-open="false"
-                      class="lg:hidden lg:invisible outline-none w-7 h-auto flex flex-col relative">
-                      <span id="line-1"
-                          class="w-6 h-0.5 rounded-full bg-gray-700 transition-all duration-300 ease-linear"></span>
-                      <span id="line-2"
-                          class="w-6 origin-center  mt-1 h-0.5 rounded-ful bg-gray-700 transition-all duration-300 ease-linear"></span>
-                      <span id="line-3"
-                          class="w-6 mt-1 h-0.5 rounded-ful bg-gray-700 transition-all duration-300 ease-linear"></span>
-                      <span class="sr-only">togglenav</span>
-                  </button>
-              </div>
-          </nav>
-      </div>
-  </header>
+    <%-include("./partials/nav")-%>
   
   
   <section class="relative py-32 lg:py-36 " id="hero">
@@ -86,17 +21,17 @@
               font-bold text-gray-100">
               <span
                       class="text-transparent bg-clip-text bg-gradient-to-br from-blue-200 from-20% via-rose-600 via-30% to-blue-600">i18n4e:</span>
-                      i18n for Express Js
+                      <span i18nID="phr"></span>
               </h1>
-              <p class="mt-8 text-gray-200">
-                i18n4e is a package that offers a modern, quick and easy way to add internationalization support to your Express Js application.
+              <p class="mt-8 text-gray-200" i18nID="desc">
+              
               </p>
               <div class="mt-10  w-full flex max-w-md mx-auto lg:mx-0">
                   <div class="flex sm:flex-row items-center  justify-center  flex-col gap-5 w-full">
                       <a href="/docs"
                           class="flex emerald justify-center bg-[#FF117D] items-center w-full sm:w-max px-6 h-12 rounded-full outline-none relative overflow-hidden border duration-300 ease-linear 
                       after:absolute after:inset-x-0 after:aspect-square after:scale-0 after:opacity-70  after:origin-center after:duration-300 after:ease-linear after:rounded-full after:top-0 after:left-0 after:bg-[#0089EC] hover:after:opacity-100 hover:after:scale-[2.5] border-transparent hover:border-[#FF117D]">
-                          <span class="relative z-10 font-bold">
+                          <span class="relative z-10 font-bold" i18nID="read-docs">
                             Read the documentation
                           </span>
                       </a>  

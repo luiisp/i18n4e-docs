@@ -1,0 +1,8 @@
+{
+    "extraFiles": [
+		{
+			"view": "docs/docs",
+			"files": ["docs"]
+		}
+    ]
+}
