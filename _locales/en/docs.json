@@ -29,5 +29,11 @@
     },
     "only-cst":{
         "message":"Only if CST mode"
+    },
+    "server-title":{
+        "message":"Server"
+    },
+    "or-in-client":{
+        "message":"Or in client"
     }
 }
