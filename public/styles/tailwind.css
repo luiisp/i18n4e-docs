@@ -47,3 +47,15 @@ button[data-toggle-navbar][data-is-open="true"] #line-3 {
 .hide {
     animation: hide 0.2s ease-in-out forwards;
 }
+
+#copy{
+    transition: all 0.3s ease-in-out;
+}
+
+#copy:hover{
+    transform: scale(1.05);
+}
+
+#copy:active{
+    transform: scale(0.95);
+}
