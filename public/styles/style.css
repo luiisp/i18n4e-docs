@@ -512,6 +512,9 @@ video {
   white-space: nowrap;
   border-width: 0;
 }
+.pointer-events-none {
+  pointer-events: none;
+}
 .invisible {
   visibility: hidden;
 }
@@ -581,13 +584,9 @@ video {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 .ml-4 {
   margin-left: 1rem;
@@ -719,6 +718,11 @@ video {
 }
 .animate-bounce {
   animation: bounce 1s infinite;
+}
+.select-none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .flex-col {
   flex-direction: column;
@@ -981,9 +985,6 @@ video {
 .font-semibold {
   font-weight: 600;
 }
-.font-thin {
-  font-weight: 100;
-}
 .leading-tight {
   line-height: 1.25;
 }
@@ -1139,6 +1140,18 @@ button[data-toggle-navbar][data-is-open="true"] #line-3 {
 
 .hide {
     animation: hide 0.2s ease-in-out forwards;
+}
+
+#copy{
+    transition: all 0.3s ease-in-out;
+}
+
+#copy:hover{
+    transform: scale(1.05);
+}
+
+#copy:active{
+    transform: scale(0.95);
 }
 
 .after\:absolute::after {

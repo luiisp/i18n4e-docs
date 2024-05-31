@@ -1,0 +1,74 @@
+<%-include("../partials/html")-%>
+<head>
+    <%-include("../partials/meta")-%>
+    <title>i18n4e: Learning with CST</title>
+</head>
+
+<body class="relative bg-[#040408fd]">
+
+
+    <%- include("../partials/nav") %>
+
+<div id="popup" style="display: none;" class="fixed w-full z-50 flex items-center justify-center bg-[#d7d7d7] bg-opacity-65 backdrop-blur-xl">
+    <span class="my-1 text-black ">Example</span>
+</div>
+    
+    <section class="relative z-10 mx-auto flex flex-col items-center justify-center lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5">
+        <div class="mt-8 text-center gap-2 px-10 flex flex-col justify-center items-center space-y-8">
+
+
+     
+
+            <div class="text-center mt-10 w-full lg:w-3/4">
+                <h1 class="text-4xl font-semibold text-white" i18nID="how-does">How does CST work?</h1>
+                <p class="text-gray-300 my-10  text-xl" i18nID="warn">CST is a translation mode for i18n in which the original document is first rendered and then translated, the translation occurs by requesting
+                    to a server with support for i18n4e certain JSON with content necessary to translate that page</p>
+                <h1 class="text-2xl my-8 font-semibold text-[#0089EC]" i18nID="server-title">Server</h1>
+                <div class="my-8 w-full backdrop-blur-xl bg-opacity-60 bg-[#030208] p-2 rounded-full shadow-lg flex items-center justify-center">
+                    <input type="text" class="bg-transparent text-white p-2 px-6 rounded-lg w-full focus:outline-none" value="npm install i18n4e" readonly>
+                    <button id="copy" class="ml-4 text-[#040408] px-4 py-2 rounded-full font-bold">
+    
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-[#f5f4ff7d]"  viewBox="0 0 512 512"><path fill="currentColor" d="M408 480H184a72 72 0 0 1-72-72V184a72 72 0 0 1 72-72h224a72 72 0 0 1 72 72v224a72 72 0 0 1-72 72"/><path fill="currentColor" d="M160 80h235.88A72.12 72.12 0 0 0 328 32H104a72 72 0 0 0-72 72v224a72.12 72.12 0 0 0 48 67.88V160a80 80 0 0 1 80-80"/></svg>
+                    </button>
+                </div>
+                <h1 class="text-2xl font-semibold text-[#FF0F7C]" i18nID="or-in-client">Or in client </h1>
+                <div class="my-8 w-full backdrop-blur-xl bg-opacity-60 bg-[#030208] p-2 rounded-full shadow-lg flex items-center justify-center">
+                    <input type="text" class="bg-transparent text-white p-2 px-6 rounded-lg w-full focus:outline-none" value='<script src="https://cdn.jsdelivr.net/npm/i18n4e/client-dist/i18n4e.min.js"></script>' readonly>
+                    <button id="copy" class="ml-4 text-[#040408] px-4 py-2 rounded-full font-bold">
+    
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-[#f5f4ff7d]"  viewBox="0 0 512 512"><path fill="currentColor" d="M408 480H184a72 72 0 0 1-72-72V184a72 72 0 0 1 72-72h224a72 72 0 0 1 72 72v224a72 72 0 0 1-72 72"/><path fill="currentColor" d="M160 80h235.88A72.12 72.12 0 0 0 328 32H104a72 72 0 0 0-72 72v224a72.12 72.12 0 0 0 48 67.88V160a80 80 0 0 1 80-80"/></svg>
+                    </button>
+                </div>
+                
+                <p class="text-gray-300 mt-2 font-semibold text-xl" i18nID="modes-understands">i18n4e can be applied easily, but you need to choose how to apply it. There are 2 slightly different ways to apply it, which is using CST (Client Side Translation) and SST (Server Side Translation)</p>
+            </div>
+
+            <div class="p-6 w-full lg:w-3/4">
+                <p class="text-gray-300 opacity-50 text-xl" i18nID="warn">CST mode is enabled by default on i18n4 but you can easily change this.</p>
+
+                <div class="mt-6 flex flex-col lg:flex-row lg:space-x-10">
+                    <div class="flex-1 p-4">
+                        <h3 class="text-2xl font-semibold text-[#FF0F7C]" style="text-shadow: 6px -4px 20px #ff0f7b6d;">Client-Side Translation (CST)</h3>
+                        <p class="text-gray-300 mt-2" i18nID="cst-desc">CST (Client-Side Translation) is a way of applying i18n4e using JavaScript on the client side. This way is suitable for applications that have a lot of client-side rendering and want to deliver content quickly to their customers. First the content is rendered and then it is translated into the user's language.</p>
+                        <a href="/docs/cst" class="my-8 inline-block text-[#0089EC] border-[#0089EC] border px-4 py-2 rounded-full font-bold" i18nID="cst-btn">Start with Client-Side Translation</a>
+                    </div>
+
+                    <div class="flex-1 p-4 mt-6 lg:mt-0">
+                        <h3 class="text-2xl font-semibold text-[#FF0F7C]" style="text-shadow: 6px -4px 20px #ff0f7b6d;">Server-Side Translation (SST)</h3>
+                        <p class="text-gray-300 mt-2" i18nID="sst-desc">SST (Server-Side Translation) is a way of applying i18n4e to the client on the server side. This way is suitable for applications that have a lot of server-side rendering and want to deliver all translated-only content to their clients directly. The document is translated into the client's language and then delivered translated (The cache is available in SST)</p>
+                        <a href="/docs/sst" class="my-8 inline-block border text-[#0089EC] border-[#0089EC] px-4 py-2 rounded-full font-bold" i18nID="sst-btn">Start with Server-Side Translation</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <%- include("../partials/footer") %>
+
+    <script src="scripts/get-package-info.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/utils.js"></script>
+</body>
+</html>
