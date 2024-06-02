@@ -13,7 +13,9 @@ app.set("views",path.join(__dirname, "views"));
 console.log(path.join(__dirname, "locales"));
 i18n4e.init(app, {
   serverSideTranslation: true,
-
+  options:{
+    langsFolder: path.join(__dirname, "_locales"),
+  }
 });
 
 app.get("/", (req, res) => {
