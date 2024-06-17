@@ -59,3 +59,18 @@ button[data-toggle-navbar][data-is-open="true"] #line-3 {
 #copy:active{
     transform: scale(0.95);
 }
+
+#langs-ss{
+    background-color: #050509;
+    text-align: center;
+}
+
+#langs-ss option{
+    background-color: #050509;
+    padding: .5rem;
+    
+}
+
+#langs-ss option:hover{
+    background-color: #1a1a1d;
+}

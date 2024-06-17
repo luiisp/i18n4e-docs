@@ -10,12 +10,13 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 app.set("view engine", "ejs");
 app.set("views",path.join(__dirname, "views"));
-console.log(path.join(__dirname, "locales"));
 i18n4e.init(app, {
-  serverSideTranslation: true,
-  options:{
-    langsFolder: path.join(__dirname, "_locales"),
-  }
+  langsFolder: path.join(__dirname, "_locales"),
+  enableClient:true,
+  useLangSession:true,
+  i18n4eDefaultSession:true
+  
+
 });
 
 app.get("/", (req, res) => {
