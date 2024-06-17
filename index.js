@@ -28,11 +28,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/docs', (req, res) => {
-  res.render('docs/docs');
+  res.render('docs/get-started');
 });
 
-app.get('/docs/cst', (req, res) => {
-  res.render('docs/cst');
+app.get('/test', (req, res) => {
+  res.render('docs/test');
 });
 
 app.listen(PORT, () => {
