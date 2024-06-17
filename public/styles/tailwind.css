@@ -49,15 +49,16 @@ button[data-toggle-navbar][data-is-open="true"] #line-3 {
 }
 
 #copy{
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
 #copy:hover{
-    transform: scale(1.05);
+    transform: scale(1.05) rotate(10deg);
+    filter: hue-rotate(200deg);
 }
 
 #copy:active{
-    transform: scale(0.95);
+    transform: scale(0.8);
 }
 
 #langs-ss{

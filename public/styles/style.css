@@ -580,10 +580,6 @@ video {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -597,20 +593,11 @@ video {
 .mt-10 {
   margin-top: 2.5rem;
 }
-.mt-2 {
-  margin-top: 0.5rem;
-}
 .mt-4 {
   margin-top: 1rem;
 }
-.mt-6 {
-  margin-top: 1.5rem;
-}
 .mt-8 {
   margin-top: 2rem;
-}
-.inline-block {
-  display: inline-block;
 }
 .flex {
   display: flex;
@@ -648,6 +635,9 @@ video {
 .h-full {
   height: 100%;
 }
+.h-5 {
+  height: 1.25rem;
+}
 .w-10 {
   width: 2.5rem;
 }
@@ -672,6 +662,9 @@ video {
 .w-full {
   width: 100%;
 }
+.w-5 {
+  width: 1.25rem;
+}
 .min-w-max {
   min-width: -moz-max-content;
   min-width: max-content;
@@ -681,9 +674,6 @@ video {
 }
 .max-w-md {
   max-width: 28rem;
-}
-.flex-1 {
-  flex: 1 1 0%;
 }
 .origin-center {
   transform-origin: center;
@@ -909,12 +899,6 @@ video {
 .p-2 {
   padding: 0.5rem;
 }
-.p-4 {
-  padding: 1rem;
-}
-.p-6 {
-  padding: 1.5rem;
-}
 .p-8 {
   padding: 2rem;
 }
@@ -1022,10 +1006,6 @@ video {
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
 }
-.text-gray-300 {
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
-}
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
@@ -1048,9 +1028,6 @@ video {
 }
 .opacity-40 {
   opacity: 0.4;
-}
-.opacity-50 {
-  opacity: 0.5;
 }
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -1146,15 +1123,16 @@ button[data-toggle-navbar][data-is-open="true"] #line-3 {
 }
 
 #copy{
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
 #copy:hover{
-    transform: scale(1.05);
+    transform: scale(1.05) rotate(10deg);
+    filter: hue-rotate(200deg);
 }
 
 #copy:active{
-    transform: scale(0.95);
+    transform: scale(0.8);
 }
 
 #langs-ss{
@@ -1347,10 +1325,6 @@ button[data-toggle-navbar][data-is-open="true"] #line-3 {
     margin-right: 0px;
   }
 
-  .lg\:mt-0 {
-    margin-top: 0px;
-  }
-
   .lg\:block {
     display: block;
   }
@@ -1424,12 +1398,6 @@ button[data-toggle-navbar][data-is-open="true"] #line-3 {
 
   .lg\:gap-12 {
     gap: 3rem;
-  }
-
-  .lg\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
-    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .lg\:border-0 {

@@ -1,11 +1,7 @@
 {
-	"desc": {
-		"message": "i18n4e é um pacote que oferece uma maneira moderna, rápida e fácil de adicionar suporte de internacionalização à sua aplicação Express.js."
-	},
-	"phr":{
-		"message":"i18n para Express Js"
-	},
-	"read-docs":{
-		"message":"Leia a documentação"
-	}
+	"desc": "i18n4e é um pacote que oferece uma maneira moderna, rápida e fácil de adicionar suporte de internacionalização à sua aplicação Express.js.",
+	"phr": "i18n para Express Js",
+	"read-docs": "Leia a documentação",
+	"repo": "Repositório Oficial",
+	"desc-footer":"i18n4e (Internationalization for Express), uma biblioteca poderosa e flexível projetada para simplificar o processo de adição de suporte multilíngue às suas aplicações web.",	"understand": "Entenda como funciona"
 }
